@@ -2,7 +2,6 @@
 # Luis Antonio Arreola Gutiérrez
 
 ## 📍 Información de contacto
-- **Teléfono:** (322) 107 37 79  
 - **Correo:** laag2000@gmail.com  
 - **LinkedIn** (My LinkedIn)[https://www.linkedin.com/in/luis-antonio-arreola-gutierrez-a48239131/]
 
@@ -26,12 +25,12 @@ Implementar software en áreas de oportunidad o para resolver problemáticas con
 ## 🛠️ Habilidades técnicas
 | Área | Herramientas / Tecnologías |
 |------|----------------------------|
-| **Programación Web** | Ruby on Rails, JavaScript, SCSS, React, Nginx |
-| **Aplicaciones Móviles** | Android (nativo), Flutter |
+| **Programación Web** | Ruby on Rails, JavaScript, SCSS, React |
+| **Aplicaciones Móviles** | Android (nativo), Ios(Nativo y Swift), Flutter |
 | **Bases de datos** | MySQL, PostgreSQL, MariaDB |
-| **Infraestructura** | AWS (EC2, RDS, S3, etc.), Docker, Linux, macOS |
+| **Infraestructura** | AWS (EC2, RDS, S3, etc.), Docker, Linux, macOS, Nginx |
 | **DevOps** | AWS – DevOps, CI/CD |
-| **Otros** | Redis, Resque, Sidekiq, Sunspot, OpenPay |
+| **Otros** | Redis, Resque, Sidekiq, Sunspot, OpenPay, ElasticSearch |
 
 ## 📚 Idiomas
 - **Inglés:** Intermedio  
