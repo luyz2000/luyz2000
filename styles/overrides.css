@@ -891,3 +891,22 @@ html {
     scroll-behavior: auto !important;
   }
 }
+
+/* === WEBP FALLBACK para navegadores sin soporte === */
+/* Fallback para header background */
+.page-header-image {
+  background-image: url('images/header-bg.webp');
+}
+
+/* Usar @supports para detectar soporte WebP y usar PNG como fallback */
+@supports not (background-image: url('images/header-bg.webp')) {
+  .page-header-image {
+    background-image: url('images/header-bg.png') !important;
+  }
+}
+
+/* 
+  Nota: El elemento <picture> en HTML ya maneja el fallback para imágenes de contenido.
+  Para background-image CSS, los navegadores modernos soportan WebP.
+  Safari < 14 usa PNG por defecto si WebP no está disponible.
+*/
