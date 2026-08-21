@@ -189,9 +189,23 @@ h6,
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+.content-center h1.h2.title {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+
 .content-center .category {
   font-weight: 300;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.content-center h2.category {
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 /* === PROFILE IMAGE — Pulse azul (Halo effect) === */
