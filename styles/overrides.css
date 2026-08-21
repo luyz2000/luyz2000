@@ -375,6 +375,18 @@ section[id] {
   margin-bottom: 0;
 }
 
+/* === ICONOS SVG EN TARJETAS DE TECNOLOGÍA === */
+.tech-icon-lg {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover .tech-icon-lg {
+  transform: scale(1.1);
+}
+
 /* === EXPERIENCIA === */
 .cc-experience {
   padding-top: 0;
@@ -910,3 +922,89 @@ html {
   Para background-image CSS, los navegadores modernos soportan WebP.
   Safari < 14 usa PNG por defecto si WebP no está disponible.
 */
+
+/* === TARJETAS DE CLIENTES === */
+.client-card {
+  display: block;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  color: inherit;
+}
+
+.client-screenshot {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: top;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.client-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f8f9fa;
+  padding: 4px;
+}
+
+.client-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #1a3a5c;
+}
+
+.client-desc {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+/* === BOTÓN VER SITIO === */
+.btn-site {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2c6faa;
+  background: linear-gradient(135deg, #e8f4fb 0%, #f0f7fc 100%);
+  border: 1px solid #b8daf0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-site:hover {
+  color: #1a3a5c;
+  background: linear-gradient(135deg, #d4eaf5 0%, #e4f0f8 100%);
+  border-color: #6bb3e0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(44, 111, 170, 0.15);
+  text-decoration: none;
+}
+
+.btn-site i {
+  font-size: 12px;
+}
