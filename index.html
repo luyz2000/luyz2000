@@ -72,12 +72,13 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha384-Ux/4YAAMlStTOIqhvtkrLXf3Qlb10beD6Hr9GAFxGGc8zsIulJZBqA1+/naXWvVZ" crossorigin="anonymous">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha384-Ux/4YAAMlStTOIqhvtkrLXf3Qlb10beD6Hr9GAFxGGc8zsIulJZBqA1+/naXWvVZ" crossorigin="anonymous">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha384-Ux/4YAAMlStTOIqhvtkrLXf3Qlb10beD6Hr9GAFxGGc8zsIulJZBqA1+/naXWvVZ" crossorigin="anonymous"></noscript>
+  <style>@font-face{font-family:'ForkAwesome';src:url('https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff2?v=1.2.0') format('woff2'),url('https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/fonts/forkawesome-webfont.woff?v=1.2.0') format('woff');font-display:swap;font-weight:normal;font-style:normal}</style>
 
   <!-- Critical CSS (inline for faster LCP) -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -153,7 +154,7 @@
                 </div>
                 <h1 class="h2 title">Luis Antonio Arreola Gutiérrez</h1>
                 <h2 class="category text-white">Desarrollador Full-Stack Senior · Puerto Vallarta, Jalisco</h2>
-                <a class="btn btn-primary smooth-scroll mr-2" href="#contacto" aria-label="Ir a la sección de contacto">Contáctame</a>
+                <a class="btn btn-primary smooth-scroll mr-2" href="#contacto" aria-label="Contáctame - Ir a la sección de contacto">Contáctame</a>
                 <a class="btn btn-primary" href="https://www.linkedin.com/in/luis-antonio-arreola-gutierrez-a48239131/"
                   target="_blank" rel="noopener noreferrer"
                   aria-label="Ver perfil de LinkedIn (abre en nueva pestaña)"><i class="fa fa-linkedin"
