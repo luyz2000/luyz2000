@@ -295,48 +295,134 @@ h6,
   transform: translateX(-50%);
 }
 
-/* === SECCIÓN GENERAL === */
+/* === SECCIÓN GENERAL (ritmo vertical estandarizado) === */
 .section {
-  padding: 30px 0;
+  padding: 48px 0;
 }
 
-/* Offset top para las secciones en desktop cuando tienen la class navegada */
+/* Offset top para anclas */
 section[id] {
   scroll-margin-top: 80px;
 }
 
 .section .title.mb-4 {
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.section + .section {
+  padding-top: 0;
+}
+
+.section .container > .title:first-child,
+.section .container > h2:first-child {
+  margin-top: 0;
+}
+
+/* Hero interno no necesita 48px */
+.page-header .section {
+  padding: 20px 0;
 }
 
 #sobre-mi .card {
   background: linear-gradient(135deg, #fafcfe 0%, #e8f4fb 100%);
 }
 
-/* === BARRAS DE PROGRESO (Habilidades) === */
-.progress-container.progress-primary .progress {
-  background: rgba(44, 111, 170, 0.15) !important;
-  border-radius: 10px;
-  height: 8px !important;
+/* === HABILIDADES TÉCNICAS (grid sin barras) === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
 }
 
-.progress-container.progress-primary .progress-bar {
-  background: linear-gradient(90deg, #2c6faa, #3d8fd4) !important;
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: linear-gradient(135deg, #fafcfe 0%, #e8f4fb 100%);
+  border: 1px solid rgba(44, 111, 170, 0.08);
+  border-left: 3px solid #2c6faa;
   border-radius: 10px;
+  padding: 12px 16px;
+  transition: all 0.25s ease;
 }
 
-.progress-container.progress-primary .progress-value,
-.progress-container.progress-primary .progress-badge {
-  color: #1a3a5c !important;
+.skill-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(26, 58, 92, 0.08);
+  border-left-color: #3d8fd4;
+  border-color: rgba(44, 111, 170, 0.15);
+}
+
+.skill-name {
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a3a5c;
+  line-height: 1.3;
 }
 
-.progress-container {
-  margin-bottom: 25px !important;
+.skill-level {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.progress-container .progress-badge {
-  font-size: 15px !important;
+.skill-level.level-experto {
+  background: linear-gradient(135deg, #1a3a5c, #2c6faa);
+  color: #fff;
+}
+
+.skill-level.level-avanzado {
+  background: linear-gradient(135deg, #2c6faa, #3d8fd4);
+  color: #fff;
+}
+
+.skill-level.level-intermedio {
+  background: #e8f4fb;
+  color: #1a3a5c;
+  border: 1px solid #b8daf0;
+}
+
+.skills-group {
+  margin-bottom: 18px;
+}
+
+.skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.skills-group-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  margin: 0 0 10px 2px;
+  letter-spacing: 0.3px;
+}
+
+.skills-group-title .skill-level {
+  font-size: 0.7rem;
+  padding: 3px 9px;
+}
+
+.skills-group-count {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #6b7c8d;
+}
+
+.otras-tec-title {
+  margin-top: 32px !important;
 }
 
 /* === TARJETAS DE TECNOLOGÍA === */
@@ -859,15 +945,31 @@ a:hover {
   .cert-card {
     margin-bottom: 16px;
   }
+
+  .section {
+    padding: 36px 0;
+  }
+
+  .section + .section {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 576px) {
   .section {
-    padding: 25px 0;
+    padding: 28px 0;
+  }
+
+  .section + .section {
+    padding-top: 0;
   }
 
   .card-body {
     padding: 20px 16px;
+  }
+
+  .section .title.mb-4 {
+    margin-bottom: 1.25rem !important;
   }
 }
 
@@ -957,12 +1059,17 @@ html {
   color: inherit;
 }
 
+.client-card picture {
+  display: block;
+}
+
 .client-screenshot {
   width: 100%;
   height: 160px;
   object-fit: cover;
   object-position: top;
   border-bottom: 1px solid #e0e0e0;
+  display: block;
 }
 
 .client-info {
