@@ -396,37 +396,6 @@ section[id] {
   border: 1px solid #b8daf0;
 }
 
-.skills-group {
-  margin-bottom: 18px;
-}
-
-.skills-group:last-child {
-  margin-bottom: 0;
-}
-
-.skills-group-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #1a3a5c;
-  margin: 0 0 10px 2px;
-  letter-spacing: 0.3px;
-}
-
-.skills-group-title .skill-level {
-  font-size: 0.7rem;
-  padding: 3px 9px;
-}
-
-.skills-group-count {
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: #6b7c8d;
-}
-
 .otras-tec-title {
   margin-top: 32px !important;
 }
