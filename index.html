@@ -3,16 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- SEO Primary Meta Tags -->
   <title>Luis Antonio Arreola Gutiérrez — Desarrollador Full-Stack Senior</title>
-  <meta name="title" content="Luis Antonio Arreola Gutiérrez — Desarrollador Full-Stack Senior">
   <meta name="description"
     content="Portafolio de Luis Antonio Arreola Gutiérrez, Desarrollador Full-Stack Senior con +10 años en Ruby on Rails, Python, Flutter y AWS. Puerto Vallarta, México.">
-  <meta name="keywords"
-    content="Desarrollador Full-Stack, Ruby on Rails, JavaScript, React, Flutter, AWS, Puerto Vallarta, México, Programador Senior">
   <meta name="author" content="Luis Antonio Arreola Gutiérrez">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.laag.dev/">
@@ -36,7 +32,8 @@
   <meta property="og:title" content="Luis Antonio Arreola Gutiérrez — Desarrollador Full-Stack Senior">
   <meta property="og:description"
     content="Portafolio profesional de Luis Antonio Arreola Gutiérrez. +10 años creando software eficiente y escalable.">
-  <meta property="og:image" content="https://www.laag.dev/images/profile.jpg">
+  <meta property="og:image" content="https://www.laag.dev/images/profile.webp">
+  <meta property="og:image:type" content="image/webp">
   <meta property="og:locale" content="es_MX">
 
   <!-- Twitter -->
@@ -44,7 +41,7 @@
   <meta name="twitter:title" content="Luis Antonio Arreola Gutiérrez — Desarrollador Full-Stack Senior">
   <meta name="twitter:description"
     content="Portafolio profesional de Luis Antonio Arreola Gutiérrez. +10 años creando software eficiente y escalable.">
-  <meta name="twitter:image" content="https://www.laag.dev/images/profile.jpg">
+  <meta name="twitter:image" content="https://www.laag.dev/images/profile.webp">
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -53,7 +50,7 @@
       "@type": "Person",
       "name": "Luis Antonio Arreola Gutiérrez",
       "url": "https://www.laag.dev",
-      "image": "https://www.laag.dev/images/profile.jpg",
+      "image": "https://www.laag.dev/images/profile.webp",
       "jobTitle": "Desarrollador Full-Stack Senior",
       "worksFor": {
         "@type": "Organization",
@@ -65,7 +62,6 @@
         "addressRegion": "Jalisco",
         "addressCountry": "MX"
       },
-      "email": "laag2000@gmail.com",
       "sameAs": [
         "https://www.linkedin.com/in/luis-antonio-arreola-gutierrez-a48239131/",
         "https://github.com/luyz2000"
@@ -944,8 +940,10 @@
                   <div class="card mb-0">
                     <div class="card-body" style="padding: 2.5rem;">
                       <h2 class="h4 text-center title mb-4" id="contacto-titulo">Contáctame</h2>
-                      <form action="https://formspree.io/f/laag2000@gmail.com" method="POST"
+                      <form id="contact-form" action="https://formspree.io/f/mgaeogbj" method="POST"
                         aria-label="Formulario de contacto">
+                        <div data-fs-success class="alert alert-success" style="display:none"></div>
+                        <div data-fs-error class="alert alert-danger" style="display:none"></div>
                         <div class="row">
                           <div class="col-md-6">
                             <div class="p pb-3"><strong>¿Tienes un proyecto en mente? ¡Escríbeme!</strong></div>
@@ -956,8 +954,9 @@
                                       class="fa fa-user-circle"></i></span>
                                   <label for="contact-name" class="sr-only">Tu nombre</label>
                                   <input class="form-control" type="text" id="contact-name" name="name"
-                                    placeholder="Tu nombre" required="required" autocomplete="name" />
+                                    placeholder="Tu nombre" required="required" autocomplete="name" data-fs-field />
                                 </div>
+                                <span data-fs-error="name" class="small text-danger"></span>
                               </div>
                             </div>
                             <div class="row mb-3">
@@ -966,9 +965,10 @@
                                   <span class="input-group-addon" aria-hidden="true"><i
                                       class="fa fa-file-text"></i></span>
                                   <label for="contact-subject" class="sr-only">Asunto</label>
-                                  <input class="form-control" type="text" id="contact-subject" name="Subject"
-                                    placeholder="Asunto" required="required" />
+                                  <input class="form-control" type="text" id="contact-subject" name="_subject"
+                                    placeholder="Asunto" required="required" data-fs-field />
                                 </div>
+                                <span data-fs-error="_subject" class="small text-danger"></span>
                               </div>
                             </div>
                             <div class="row mb-3">
@@ -977,9 +977,10 @@
                                   <span class="input-group-addon" aria-hidden="true"><i
                                       class="fa fa-envelope"></i></span>
                                   <label for="contact-email" class="sr-only">Tu correo electrónico</label>
-                                  <input class="form-control" type="email" id="contact-email" name="_replyto"
-                                    placeholder="Tu correo electrónico" required="required" autocomplete="email" />
+                                  <input class="form-control" type="email" id="contact-email" name="email"
+                                    placeholder="Tu correo electrónico" required="required" autocomplete="email" data-fs-field />
                                 </div>
+                                <span data-fs-error="email" class="small text-danger"></span>
                               </div>
                             </div>
                           </div>
@@ -990,11 +991,9 @@
                               <p class="mb-0"><strong>Correo electrónico</strong></p>
                               <p class="pb-2"><a href="mailto:laag2000@gmail.com">laag2000@gmail.com</a></p>
                               <p class="mb-0"><strong>LinkedIn</strong></p>
-                              <p class="pb-2"><a
+                              <p><a
                                   href="https://www.linkedin.com/in/luis-antonio-arreola-gutierrez-a48239131/"
                                   target="_blank" rel="noopener noreferrer">Ver perfil</a></p>
-                              <p class="mb-0"><strong>Portafolio</strong></p>
-                              <p><a href="https://www.laag.dev" target="_blank" rel="noopener">www.laag.dev</a></p>
                             </div>
                           </div>
                         </div>
@@ -1005,7 +1004,8 @@
                             <div class="form-group mb-0">
                               <label for="contact-message" class="sr-only">Tu mensaje</label>
                               <textarea class="form-control" id="contact-message" name="message"
-                                placeholder="Tu mensaje" required="required" rows="4"></textarea>
+                                placeholder="Tu mensaje" required="required" rows="4" data-fs-field></textarea>
+                              <span data-fs-error="message" class="small text-danger"></span>
                             </div>
                           </div>
                         </div>
@@ -1013,7 +1013,7 @@
                         <!-- Centered Button -->
                         <div class="row">
                           <div class="col text-center">
-                            <button class="btn btn-primary" type="submit" id="submit-contact"
+                            <button class="btn btn-primary" type="submit" id="submit-contact" data-fs-submit-btn
                               style="padding: 14px 40px; font-size: 1.05rem; min-width: 200px;">Enviar mensaje</button>
                           </div>
                         </div>
@@ -1049,6 +1049,12 @@
                               </div>
                               </footer>
 
+
+                              <script>
+                                window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+                                formspree('initForm', { formElement: '#contact-form', formId: 'mgaeogbj' });
+                              </script>
+                              <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
                               <!-- Vanilla JS -->
                               <script src="js/ui-kit.js" defer></script>
                               <script src="scripts/main.js" defer></script>
