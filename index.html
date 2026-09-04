@@ -98,12 +98,12 @@
 
   <header role="banner">
     <div class="profile-page sidebar-collapse">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400"
+      <nav class="navbar navbar-expand-lg fixed-top bg-primary"
         role="navigation" aria-label="Navegación principal">
         <div class="container">
           <div class="navbar-translate">
             <a class="navbar-brand" href="#top" rel="tooltip" aria-label="Inicio - Luis Arreola">Luis Arreola</a>
-            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
               aria-controls="navigation" aria-expanded="false" aria-label="Abrir menú de navegación">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
@@ -937,7 +937,7 @@
               <div class="row">
                 <div class="col-md-9">
                   <div class="card mb-0">
-                    <div class="card-body" style="padding: 2.5rem;">
+                    <div class="card-body contact-card-body">
                       <h2 class="h4 text-center title mb-4" id="contacto-titulo">Contáctame</h2>
                       <form id="contact-form" action="https://formspree.io/f/mgaeogbj" method="POST"
                         aria-label="Formulario de contacto">
@@ -1012,8 +1012,7 @@
                         <!-- Centered Button -->
                         <div class="row">
                           <div class="col text-center">
-                            <button class="btn btn-primary" type="submit" id="submit-contact" data-fs-submit-btn
-                              style="padding: 14px 40px; font-size: 1.05rem; min-width: 200px;">Enviar mensaje</button>
+                            <button class="btn btn-primary submit-contact-btn" type="submit" id="submit-contact" data-fs-submit-btn>Enviar mensaje</button>
                           </div>
                         </div>
                       </form>
@@ -1055,7 +1054,6 @@
                               </script>
                               <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
                               <!-- Vanilla JS -->
-                              <script src="js/ui-kit.js" defer></script>
                               <script src="js/main.js" defer></script>
 </body>
 
