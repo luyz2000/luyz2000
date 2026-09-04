@@ -13,14 +13,14 @@ Desarrollador Full-Stack Senior con más de **10 años de experiencia** creando 
 
 Tengo un gusto especial por el **paralelismo, jobs asíncronos y la automatización de procesos**, buscando siempre optimizar los tiempos de procesamiento de tareas complejas.
 
-En mis proyectos recientes he trabajado en **sistemas de pagos internacionales**, **motores de precios con inteligencia artificial**, **plataformas SaaS multi-tenant**, **desarrollo de apps móviles con Flutter** y **creación de herramientas para agentes de IA**.
+En mis proyectos recientes he trabajado en **sistemas de pagos internacionales**, **motores de precios con inteligencia artificial**, **plataformas SaaS multi-tenant**, **desarrollo de apps móviles con Flutter** y, en especial, en la **creación de herramientas y skills para agentes de IA** (Claude Code, Cursor, Codex) y el **desarrollo asistido por IA** con documentación OpenSpec.
 
 ---
 
 ## 💼 Experiencia Laboral
 
 ### **Desarrollador Senior 2 Full Stack** | Reservamos
-*Febrero 2024 – Agosto 2026 | 2 años, 7 meses*
+*Enero 2024 – Agosto 2026 | 2 años, 7 meses*
 
 Desarrollo de sistemas críticos para la plataforma de viajes: motor de precios con IA, procesamiento de pagos internacionales, administración SaaS y contenido web para captación de usuarios.
 
@@ -28,13 +28,13 @@ Desarrollo de sistemas críticos para la plataforma de viajes: motor de precios 
 
 | Área | Tecnologías / Logros |
 |------|---------------------|
+| **AI Tooling & Desarrollo Asistido por IA** | Creación de skills para agentes de IA (Claude Code, Cursor, Codex) y documentación OpenSpec para acelerar el desarrollo asistido por IA |
 | **Motor de Precios con IA** | Sistema de pricing dinámico usando Machine Learning (Random Forest) para predicción de demanda y optimización de ingresos en tiempo real |
 | **Plataforma de Compras** | Sistema central de transacciones con procesamiento seguro de miles de pagos diarios, tickets y transferencias |
 | **Pagos Internacionales** | Integración con PayPal, Adyen, Mercado Pago, Aplazo y Costapass para operación en múltiples países de Latinoamérica |
 | **Panel SaaS** | Administración centralizada de múltiples clientes (hoteles y proveedores) con gestión de cuentas, configuraciones y permisos |
 | **Plataforma de Contenido** | Sitio web público con editor de contenido dinámico y sistema de emails transaccionales (newsletters, confirmaciones) |
 | **Testing E2E** | Implementación de pruebas automatizadas con Playwright para garantizar calidad en flujos críticos de pago |
-| **AI Tooling** | Creación de skills para agentes de IA (Claude Code, Cursor, Codex) y documentación OpenSpec para desarrollo asistido por IA |
 | **Stack** | Ruby on Rails, Python/Django, React/TypeScript, PostgreSQL, PayPal/Adyen, Docker, Git |
 
 🔗 [reservamos.mx](https://www.reservamos.mx)
@@ -168,12 +168,12 @@ Plataforma de anuncios clasificados para compra-venta de productos y servicios c
 ## 💡 Habilidades Profesionales
 
 ### Desarrollo y Arquitectura
+- **AI Tooling para agentes de IA** (Claude Code, Cursor, Codex) y desarrollo asistido por IA con OpenSpec
 - Diseño de arquitecturas escalables para sistemas de pago y e-commerce
 - Desarrollo de APIs RESTful de alta concurrencia
 - Integración con múltiples pasarelas de pago internacionales
 - Sistemas de autenticación multi-tenant y white-label
 - Implementación de pipelines de datos y ETL
-- Creación de AI Tooling para agentes de IA (Claude Code, Cursor, Codex)
 - Desarrollo de apps móviles multiplataforma con Flutter
 - Desarrollo de APIs de alta concurrencia con Elixir/Phoenix
 
