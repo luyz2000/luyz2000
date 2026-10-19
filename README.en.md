@@ -1,7 +1,7 @@
 # Luis Antonio Arreola Gutiérrez
 
 > **Senior Full-Stack Developer · Ruby on Rails**  
-> SaaS platforms, performance and AI-assisted development  
+> 10+ years of experience · SaaS platforms, performance and AI-assisted development  
 > **Location:** Puerto Vallarta, Jalisco, Mexico  
 > **Time zone:** CST (UTC−6)  
 > **Availability:** Immediate  
@@ -11,6 +11,7 @@
 > **Education:** B.Eng. in Computer Systems Engineering (Degree and Professional License)  
 > **Languages:** Spanish (Native), English: Intermediate (B1), working proficiency  
 > **Email:** laag2000@gmail.com  
+> **CV (PDF):** [Español](cv/Luis-Arreola-CV-ES.pdf) · [English](cv/Luis-Arreola-CV-EN.pdf)  
 > **Specialty:** Ruby on Rails, SaaS Platforms, Performance, Integrations, AI-Assisted Development  
 > [LinkedIn](https://www.linkedin.com/in/luis-antonio-arreola-gutierrez-a48239131/) | [GitHub](https://github.com/luyz2000) | [Portfolio](https://www.laag.dev/en/)
 
